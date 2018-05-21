@@ -25,6 +25,24 @@ public class VirtualPet {
 		hunger = hunger - 5;
 	}
 	
+	//Tick Method
+	public void tick() {
+		
+			if (hunger >= 40) {
+			} else {
+				hunger = hunger + 10;
+			}
+			
+			if (thirst >= 40) {
+			}else {
+				thirst = thirst + 10;
+			}
+			if (outside >= 40) {
+			}else {
+				outside = outside + 10;
+			}
+	}
+	
 	//Instance Variable 2
 
 	public int getThirstLevel() {
@@ -52,8 +70,14 @@ public class VirtualPet {
 		outside = outside - 5;
 		
 	}
-
 	
-
+	
+	
+	
+	
+	
+	
+	
+	
 
 }

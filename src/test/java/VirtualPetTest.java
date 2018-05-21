@@ -70,5 +70,35 @@ public class VirtualPetTest {
 		assertEquals(20, check);
 
 	}
+	
+	@Test
+	public void shouldNotHaveAHungerLevelBelow25() {
+		
+		VirtualPet underTest = new VirtualPet(20, 0, 0);
+		underTest.tick();
+		int check = underTest.getHungerLevel();
+		assertEquals(20, check);
+		
+	
+	}
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 }
