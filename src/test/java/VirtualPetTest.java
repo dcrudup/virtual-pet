@@ -9,9 +9,9 @@ public class VirtualPetTest {
 	@Test
 	public void shouldHaveADefaultHungerLevelOf25() {
 
-		VirtualPet underTest = new VirtualPet(25, 0, 0);
+		VirtualPet underTest = new VirtualPet(20, 0, 0);
 		int check = underTest.getHungerLevel();
-		assertEquals(25, check);
+		assertEquals(20, check);
 
 	}
 
@@ -49,7 +49,7 @@ public class VirtualPetTest {
 		VirtualPet underTest = new VirtualPet(0, 50, 0);
 		underTest.waterDoggo();
 		int check = underTest.getThirstLevel();
-		assertEquals(45, check);
+		assertEquals(40, check);
 
 	}
 
@@ -70,35 +70,15 @@ public class VirtualPetTest {
 		assertEquals(20, check);
 
 	}
-	
+
 	@Test
 	public void shouldNotHaveAHungerLevelBelow25() {
-		
-		VirtualPet underTest = new VirtualPet(20, 0, 0);
+
+		VirtualPet underTest = new VirtualPet(0, 0, 0);
 		underTest.tick();
 		int check = underTest.getHungerLevel();
 		assertEquals(20, check);
-		
-	
+
 	}
-		
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 
 }

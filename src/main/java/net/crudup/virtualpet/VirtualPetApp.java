@@ -13,9 +13,9 @@ public class VirtualPetApp {
 		String choice = "";
 
 		do {
-			
+
 			doggo.tick();
-			
+
 			System.out.println("Caring for my puppy, Milo.");
 			System.out.println();
 			System.out.println("Here's Milo's level of hunger " + doggo.getHungerLevel() + ".");
@@ -36,21 +36,23 @@ public class VirtualPetApp {
 				System.out.println();
 			} else if (choice.equals("2")) {
 				doggo.waterDoggo();
-				System.out.println("You just filled Milo's water bowl. His level of thirst is " + doggo.getThirstLevel() + ".");
+				System.out.println(
+						"You just filled Milo's water bowl. His level of thirst is " + doggo.getThirstLevel() + ".");
 				System.out.println();
 			} else if (choice.equals("3")) {
 				doggo.goPotty();
-				System.out.println("You just took Milo outside to go potty. His need to go out has be reduced to "
+				System.out.println("You just took Milo outside to go potty. His need to go out has been reduced to "
 						+ doggo.getTakeOutside() + ".");
 				System.out.println();
 			} else if (choice.equals("4")) {
+				System.out.println("Milo doesn't need anything. He's asleep on the couch.");
 			} else {
-				System.out.println("Milo is asleep on the couch.");
+				System.exit(0);
 			}
 
 		} while (!choice.equals("4"));
 
-			input.close();
-		}
-
+		input.close();
 	}
+
+}

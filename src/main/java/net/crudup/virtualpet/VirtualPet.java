@@ -12,72 +12,64 @@ public class VirtualPet {
 		this.outside = outside;
 	}
 
-	//Instance Variable 1
-	
+	// Instance Variable 1
+
 	public int getHungerLevel() {
 
 		return hunger;
 	}
-	
-	//Method 1
-	
+
+	// Method 1
+
 	public void feedDoggo() {
 		hunger = hunger - 5;
 	}
-	
-	//Tick Method
+
+	// Tick Method
 	public void tick() {
-		
-			if (hunger >= 40) {
-			} else {
-				hunger = hunger + 10;
-			}
-			
-			if (thirst >= 40) {
-			}else {
-				thirst = thirst + 10;
-			}
-			if (outside >= 40) {
-			}else {
-				outside = outside + 10;
-			}
+
+		if (hunger >= 30) {
+		} else {
+			hunger = hunger + 20;
+		}
+
+		if (thirst >= 30) {
+		} else {
+			thirst = thirst + 30;
+		}
+		if (outside >= 20) {
+		} else {
+			outside = outside + 30;
+		}
 	}
-	
-	//Instance Variable 2
+
+	// Instance Variable 2
 
 	public int getThirstLevel() {
 
 		return thirst;
 	}
-	
-	//Method 2
+
+	// Method 2
 
 	public void waterDoggo() {
-		thirst = thirst - 5;
+		thirst = thirst - 10;
 
 	}
 
-	//Instance Variable 3
-	
+	// Instance Variable 3
+
 	public int getTakeOutside() {
-		
+
 		return outside;
 	}
-	
-	//Method 3
+
+	// Method 3
 
 	public void goPotty() {
+
 		outside = outside - 5;
-		
+
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
 
 }
